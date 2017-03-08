@@ -1,0 +1,65 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog - TR</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/typed-custom.js"></script>
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>My Website</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+         </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="container">
+       <div class="row">
+          <div class="col-md-12 text-center head-text">
+          <img class="img-responsive" src="img/profile.png" alt="">
+            <h1 class="tagline">I'm <span id="typed"></span></h1>
+            <h2 class="sub-tagline">Hallo ^_^ !</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+<script>
+  
+    $("#typed").typed({
+        strings: ["a web developer.", "a web designer.", "tantan."],
+        typeSpeed: 30,
+        callback: function(){
+            lift();
+        }
+    });
+    function lift(){
+        $(".head-text").addClass("lift-text");
+      
+    }
+</script>
+</body></html>
